@@ -29,11 +29,11 @@ data.use=minmax(pt_heatmap,min=-2.5,max=2.5)
 heatmap.2(data.use,dendrogram="none",trace="none",Rowv=FALSE,Colv = FALSE,  ColSideColors=new1$color, labCol=FALSE,col = c("lemonchiffon1","lemonchiffon1","lemonchiffon1","pink", "purple"))
 
 
-##gives you a centered-ish heatmap w/o key; no color coding tho##
+##gives you a centered-ish heatmap w/o key; no color coding##
 heatmap.2(data.use,dendrogram="none",trace="none",Rowv=FALSE,Colv = FALSE, key = FALSE, lmat=rbind(c(2),c(3),c(1),c(4)), lhei = c(.25,.25,3,.25), lwid = 1, labCol=FALSE,margins = c(2,3), col = c("lemonchiffon1","lemonchiffon1","lemonchiffon1","pink", "purple"))
 
 ##gives you a top centered ish heatmap with bar but no gene names##
 heatmap.2(data.use,dendrogram="none",trace="none",Rowv=FALSE,Colv = FALSE, key = FALSE, lmat=rbind(c(2),c(3),c(1),c(4),c(5)), lhei = c(4,.25,.25,.25,3), lwid = 0.0001, labCol=FALSE,  ColSideColors=new1$color, margins = c(.25,.25), col = c("lemonchiffon1","lemonchiffon1","lemonchiffon1","pink", "purple"))
 
-##closest ive gotten so far##
+##closest so far##
 heatmap.2(data.use,dendrogram="none",trace="none",Rowv=FALSE,Colv = FALSE, key = FALSE, lmat=rbind(c(2),c(3),c(1),c(4),c(5)), lhei = c(4,.25,.25,.25,3), lwid = 1, labCol=FALSE,  ColSideColors=new1$color, margins = c(.05,4), col = c("lemonchiffon1","lemonchiffon1","lemonchiffon1","pink", "purple"))
